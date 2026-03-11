@@ -120,6 +120,45 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+.cta-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-left: 1rem;
+}
+
+.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero-tag:hover {
+    text-decoration: none;
+    color: white;
+}
+
 /* Section Styles */
 section {
     padding: 80px 20px;
@@ -167,6 +206,71 @@ h2 {
     vertical-align: middle;
 }
 
+/* Find Local App Icon Badge */
+.find-local-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.75rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    font-weight: 700;
+    font-size: 0.85em;
+    border-radius: 10px;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.35);
+    vertical-align: middle;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.find-local-icon:hover {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 4px 14px rgba(102, 126, 234, 0.5);
+    filter: brightness(1.08);
+}
+
+.find-local-icon .fl-emoji {
+    font-size: 1em;
+}
+
+/* Variants for different contexts */
+.find-local-icon.fl-large {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+.find-local-icon.fl-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    box-shadow: 0 1px 4px rgba(102, 126, 234, 0.3);
+}
+
+.find-local-icon.fl-badge-amber {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    box-shadow: 0 1px 4px rgba(245, 158, 11, 0.3);
+}
+
+/* Inside white/featured cards */
+.product-card.featured .find-local-icon {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-card.featured .find-local-icon:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
 /* About Section */
 .about {
     background: var(--bg-light);
@@ -175,6 +279,16 @@ h2 {
 .about-text {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.about-text a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about-text a:hover {
+    text-decoration: underline;
 }
 
 .lead {
@@ -236,6 +350,130 @@ h2 {
 /* Products Section */
 .products {
     background: white;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: white;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.model-card {
+    background: var(--bg-light);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.model-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.model-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.model-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    text-align: left;
+}
+
+.model-platforms {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.model-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.model-example {
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    border-left: 3px solid var(--primary-color);
+    font-style: italic;
+}
+
+/* Super App Section */
+.super-app-section {
+    margin-bottom: 3rem;
+}
+
+.super-app-section .product-card.featured {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.super-app-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.super-app-section .product-card.featured h3,
+.super-app-section .product-card.featured p {
+    color: white;
+}
+
+.super-app-section .product-card.featured a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.super-app-section .product-card.featured a:hover {
+    opacity: 0.8;
+}
+
+.super-app-section .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Group Titles */
+.group-title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.group-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .product-grid {
@@ -328,6 +566,16 @@ h2 {
 
 .product-card.featured a:hover {
     opacity: 0.8;
+}
+
+a.product-card.featured {
+    color: white;
+}
+
+a.product-card.featured .product-link,
+a.product-card.featured .super-app-links span {
+    color: white;
+    text-decoration: none;
 }
 
 .badge {
@@ -492,12 +740,36 @@ h2 {
         font-size: 1.2rem;
     }
 
+    .hero-highlights {
+        gap: 0.5rem;
+    }
+
+    .hero-tag {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.75rem;
+    }
+
+    .cta-secondary {
+        margin-left: 0;
+        margin-top: 0.75rem;
+    }
+
     h2 {
         font-size: 2rem;
     }
 
     .product-grid {
         grid-template-columns: 1fr;
+    }
+
+    .model-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .super-app-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
     .timeline::before {
