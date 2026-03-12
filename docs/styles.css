@@ -159,6 +159,17 @@ body {
     color: white;
 }
 
+.hero-tag-new {
+    background: rgba(16, 185, 129, 0.35);
+    border: 1px solid rgba(16, 185, 129, 0.6);
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.3); }
+    50% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.6); }
+}
+
 /* Section Styles */
 section {
     padding: 80px 20px;
@@ -377,6 +388,16 @@ h2 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+.model-card-highlight {
+    border-color: var(--success-color);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.12));
+}
+
+.model-card-highlight:hover {
+    border-color: var(--success-color);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
+}
+
 .model-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -503,6 +524,40 @@ h2 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-color: var(--primary-color);
     transition: all 0.3s ease;
+}
+
+/* Jobs / Value-Added Service Card */
+.product-card-new {
+    border: 2px solid var(--success-color);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.04), rgba(16, 185, 129, 0.1));
+    position: relative;
+}
+
+.product-card-new:hover {
+    border-color: var(--success-color);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+/* Find Local Badge — green variant for new services */
+.find-local-icon.fl-badge-new {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 1px 4px rgba(16, 185, 129, 0.3);
+}
+
+.badge-new {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    letter-spacing: 0.3px;
 }
 
 .product-icon {
