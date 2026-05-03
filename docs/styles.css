@@ -655,6 +655,61 @@ h2 {
     box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
 }
 
+/* Deprecated / Discontinued standalone app card */
+.product-card.deprecated {
+    border: 2px solid #d1d5db;
+    background: #f3f4f6;
+    opacity: 0.82;
+    position: relative;
+}
+
+.product-card.deprecated:hover {
+    border-color: #9ca3af;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.product-card.deprecated .product-icon,
+.product-card.deprecated h3,
+.product-card.deprecated p {
+    color: #6b7280;
+}
+
+.badge-discontinued {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: #e5e7eb;
+    color: #6b7280;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+    letter-spacing: 0.2px;
+    border: 1px solid #d1d5db;
+}
+
+.deprecated-notice {
+    background: #fef9c3;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #92400e;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.deprecated-notice a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.deprecated-notice a:hover {
+    text-decoration: underline;
+}
+
 /* Find Local Badge — green variant for new services */
 .find-local-icon.fl-badge-new {
     font-size: 0.7rem;
