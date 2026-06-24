@@ -577,6 +577,12 @@ h2 {
     color: white;
 }
 
+.super-app-section .product-card.featured .product-link,
+.super-app-section .product-card.featured .super-app-links span {
+    color: white;
+    opacity: 0.95;
+}
+
 .super-app-section .product-card.featured a {
     color: white;
     text-decoration: underline;
