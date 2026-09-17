@@ -197,16 +197,18 @@
         <div class="container">
             <h2>Videos</h2>
             <p class="section-subtitle">From our YouTube channel</p>
-            <p class="platform-note">New public uploads on <a href="https://www.youtube.com/@pzpl-in" target="_blank" rel="noopener noreferrer">youtube.com/@pzpl-in</a> appear here automatically. Choose a video to play — it will not auto-advance.</p>
-            <div class="youtube-player-wrap">
-                <div class="youtube-embed" id="youtube-player">
-                    <p class="youtube-placeholder">Loading videos…</p>
-                </div>
+            <p class="platform-note">Latest uploads from <a href="https://www.youtube.com/@pzpl-in" target="_blank" rel="noopener noreferrer">youtube.com/@pzpl-in</a>. Use the playlist icon in the top-left of the player to see all titles and pick one.</p>
+            <div class="youtube-embed">
+                <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=UUXuJvFflWdCDMYlknnKfYSg&amp;rel=0"
+                    title="PZPL YouTube videos"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
-            <ul class="youtube-list" id="youtube-list" hidden></ul>
-            <p class="youtube-list-error" id="youtube-list-error" hidden>
-                Could not load the video list.
-                <a href="https://www.youtube.com/@pzpl-in" target="_blank" rel="noopener noreferrer">Open the channel on YouTube →</a>
+            <p class="youtube-channel-link">
+                <a href="https://www.youtube.com/@pzpl-in/videos" target="_blank" rel="noopener noreferrer">See all videos on YouTube →</a>
             </p>
         </div>
     </section>

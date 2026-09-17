@@ -929,85 +929,20 @@ a.product-card.featured .super-app-links span {
     border: 0;
 }
 
-.youtube-placeholder {
-    margin: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #d1d5db;
-    font-size: 1rem;
-}
-
-.youtube-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
-    max-width: 880px;
-    margin: 1.5rem auto 0;
-    padding: 0;
-}
-
-.youtube-list li {
-    margin: 0;
-}
-
-.youtube-list button {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    border: 2px solid transparent;
-    border-radius: 12px;
-    background: var(--bg-white);
-    overflow: hidden;
-    cursor: pointer;
-    text-align: left;
-    font: inherit;
-    color: inherit;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.youtube-list button:hover,
-.youtube-list button:focus-visible {
-    border-color: var(--primary-color);
-    outline: none;
-}
-
-.youtube-list button.is-active {
-    border-color: var(--primary-color);
-}
-
-.youtube-list img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    background: #111827;
-    display: block;
-}
-
-.youtube-list span {
-    display: block;
-    padding: 0.7rem 0.8rem 0.85rem;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    line-height: 1.35;
-}
-
-.youtube-list-error {
+.youtube-channel-link {
     max-width: 880px;
     margin: 1.25rem auto 0;
     text-align: center;
-    color: var(--text-light);
 }
 
-.youtube-list-error a {
+.youtube-channel-link a {
     color: var(--primary-color);
     font-weight: 600;
+    text-decoration: none;
+}
+
+.youtube-channel-link a:hover {
+    text-decoration: underline;
 }
 
 /* Contact Section */
