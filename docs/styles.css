@@ -945,6 +945,47 @@ a.product-card.featured .super-app-links span {
     text-decoration: underline;
 }
 
+/* Facebook Section */
+.facebook {
+    background: white;
+}
+
+.facebook .platform-note {
+    margin-bottom: 1.5rem;
+}
+
+.facebook-embed {
+    max-width: 520px;
+    margin: 0 auto;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--bg-light);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.facebook-embed iframe {
+    max-width: 100%;
+}
+
+.facebook-channel-link {
+    max-width: 880px;
+    margin: 1.25rem auto 0;
+    text-align: center;
+}
+
+.facebook-channel-link a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.facebook-channel-link a:hover {
+    text-decoration: underline;
+}
+
 /* Contact Section */
 .contact {
     background: white;
