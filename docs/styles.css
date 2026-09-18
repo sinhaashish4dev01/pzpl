@@ -957,7 +957,7 @@ a.product-card.featured .super-app-links span {
 .facebook-embed {
     max-width: 520px;
     margin: 0 auto;
-    min-height: 600px;
+    min-height: 420px;
     display: flex;
     justify-content: center;
     overflow: hidden;
